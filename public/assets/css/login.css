@@ -1,0 +1,358 @@
+:root {
+    --color-primary: #7e30ff;
+    --color-primary-hover: #6415e6;
+    --color-bg: #eef1f8;
+    --color-text-main: #333333;
+    --color-text-muted: #888888;
+    --color-border: #e1e1e1;
+    --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.08);
+    --gradient: linear-gradient(135deg, #7386d8 0%, #ac5df1 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: var(--color-bg);
+    color: var(--color-text-main);
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 960px;
+    height: 600px;
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    width: 50%;
+    padding: 48px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.brand-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-text h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #2d3748;
+}
+
+.header-text h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    margin: 0 0 32px 0;
+}
+
+form {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    height: 52px;
+    padding: 0 20px;
+    padding-right: 45px;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    background: #f9f9f9;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    color: var(--color-text-main);
+}
+
+input::placeholder {
+    color: #bbbbbb;
+}
+
+input:focus {
+    background: #ffffff;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(126, 48, 255, 0.1);
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.toggle-password svg {
+    transition: stroke 0.3s ease;
+}
+
+.forgot-pass {
+    color: var(--color-text-muted);
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.forgot-pass:hover {
+    color: var(--color-primary);
+}
+
+button {
+    width: 100%;
+    height: 52px;
+    border-radius: 12px;
+    border: none;
+    background: var(--color-primary);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(126, 48, 255, 0.15);
+}
+
+button:hover {
+    background: var(--color-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(126, 48, 255, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-top: 24px;
+}
+
+.signup-link a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    width: 50%;
+    background: var(--gradient);
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* Vertically center */
+    justify-content: center;
+    padding: 40px;
+    overflow: hidden;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 400px;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content .subtitle {
+    font-size: 14px;
+    margin: 0 0 25px 0;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+/* --- Style Baru untuk Grid Credentials --- */
+.credentials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 Kolom */
+    gap: 15px;
+}
+
+/* Kartu Transparan (Glassmorphism) */
+.cred-card {
+    background: rgba(255, 255, 255, 0.15);
+    /* Transparan putih */
+    backdrop-filter: blur(10px);
+    /* Efek blur di belakang kartu */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.cred-card:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+}
+
+.position-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.cred-detail {
+    font-size: 13px;
+    margin-bottom: 2px;
+    display: flex;
+    gap: 5px;
+}
+
+.cred-detail span {
+    opacity: 0.7;
+}
+
+.cred-detail strong {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Update graphic agar tidak menutupi teks */
+.graphic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: overlay;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px;
+    }
+
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cred-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .position-badge {
+        margin-bottom: 0;
+    }
+}
+
+.row-left {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0 24px 0;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--color-border);
+    background: #fff;
+    transition: all 0.2s ease;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+
+.checkbox input:checked~.check {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.check::after {
+    content: "";
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    margin-top: -2px;
+    transition: transform 0.2s;
+}
+
+.checkbox input:checked~.check::after {
+    transform: rotate(45deg) scale(1);
+}
