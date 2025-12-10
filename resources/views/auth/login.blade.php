@@ -50,15 +50,16 @@
 
             <div class="hero">
                 <div class="hero-overlay"></div>
+
                 <div class="hero-content">
                     <h1>Demo Access</h1>
                     <p class="subtitle">Gunakan akun berikut untuk masuk:</p>
 
                     <div class="credentials-grid">
                         <div class="cred-card">
-                            <div class="position-badge">Admin</div>
+                            <div class="position-badge" style="background: #ff9f43;">Admin Logistik</div>
                             <div class="cred-detail">
-                                <span>U:</span> <strong>Admin</strong>
+                                <span>E:</span> <strong>admin@kosiwa.com</strong>
                             </div>
                             <div class="cred-detail">
                                 <span>P:</span> <strong>password</strong>
@@ -66,9 +67,9 @@
                         </div>
 
                         <div class="cred-card">
-                            <div class="position-badge">Admin</div>
+                            <div class="position-badge">Manager Ops 1</div>
                             <div class="cred-detail">
-                                <span>email:</span> <strong>Yanti</strong>
+                                <span>E:</span> <strong>ardhan@kosiwa.com</strong>
                             </div>
                             <div class="cred-detail">
                                 <span>P:</span> <strong>password</strong>
@@ -76,19 +77,9 @@
                         </div>
 
                         <div class="cred-card">
-                            <div class="position-badge">Kabag Keuangan</div>
+                            <div class="position-badge">Kepala Cabang 1</div>
                             <div class="cred-detail">
-                                <span>U:</span> <strong>Yanto</strong>
-                            </div>
-                            <div class="cred-detail">
-                                <span>P:</span> <strong>password</strong>
-                            </div>
-                        </div>
-
-                        <div class="cred-card">
-                            <div class="position-badge">Kabag Marketing</div>
-                            <div class="cred-detail">
-                                <span>U:</span> <strong>Suryana</strong>
+                                <span>E:</span> <strong>amir@kosiwa.com</strong>
                             </div>
                             <div class="cred-detail">
                                 <span>P:</span> <strong>password</strong>
