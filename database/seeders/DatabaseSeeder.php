@@ -43,39 +43,6 @@ class DatabaseSeeder extends Seeder
             'role' => 'approver',
         ]);
 
-        // Approver 3
-        User::create([
-            'name' => 'Manager Operasional 2',
-            'email' => 'arip@kosiwa.com',
-            'password' => Hash::make('password'),
-            'role' => 'approver',
-        ]);
-
-        // Approver 4
-        User::create([
-            'name' => 'Kepala Cabang 2',
-            'email' => 'pete@kosiwa.com',
-            'password' => Hash::make('password'),
-            'role' => 'approver',
-        ]);
-
-        // Approver 5
-        User::create([
-            'name' => 'Manager Operasional 3',
-            'email' => 'sutris@kosiwa.com',
-            'password' => Hash::make('password'),
-            'role' => 'approver',
-        ]);
-
-        // Approver 6
-        User::create([
-            'name' => 'Kepala Cabang 3',
-            'email' => 'ali@kosiwa.com',
-            'password' => Hash::make('password'),
-            'role' => 'approver',
-        ]);
-
-
         // --- DATA KENDARAAN ---
         Kendaraan::create([
             'name' => 'Toyota Avanza',
@@ -90,21 +57,21 @@ class DatabaseSeeder extends Seeder
             'plate' => 'N 1234 AB',
             'status' => 'available'
         ]);
-        
+
         Kendaraan::create([
             'name' => 'Mitsubishi Triton',
             'type' => 'angkutan_orang',
             'plate' => 'B 8899 QW',
             'status' => 'unavailable'
         ]);
-        
+
         Kendaraan::create([
             'name' => 'Isuzu ELF Crew Bus',
             'type' => 'angkutan_orang',
             'plate' => 'DK 4455 LM',
             'status' => 'available'
         ]);
-        
+
         Kendaraan::create([
             'name' => 'Mitsubishi Fuso',
             'type' => 'angkutan_barang',
